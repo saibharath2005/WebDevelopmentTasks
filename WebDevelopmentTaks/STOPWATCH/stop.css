@@ -1,0 +1,122 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Centering Content */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Container Styling */
+.container {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Title Styling */
+h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Stopwatch Display */
+#display {
+    font-size: 3em;
+    font-weight: bold;
+    color: #333;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    width: fit-content;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Button Styling */
+button {
+    font-size: 1em;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+/* Start Button */
+button#start {
+    background-color: #28a745;
+}
+
+button#start:hover {
+    background-color: #218838;
+}
+
+/* Stop Button */
+button#stop {
+    background-color: #dc3545;
+}
+
+button#stop:hover {
+    background-color: #c82333;
+}
+
+/* Reset Button */
+button#reset {
+    background-color: #007bff;
+}
+
+button#reset:hover {
+    background-color: #0069d9;
+}
+
+button#lap {
+    background-color: #f15b11;
+}
+
+button#lap:hover {
+    background-color: #f22b1c;
+}
+#laps {
+    margin-top: 20px;
+    text-align: left;
+}
+
+#laps h2 {
+    font-size: 1.5em;
+    color: #4084e4;
+}
+
+#lapTimes {
+    list-style: none;
+    padding: 0;
+}
+
+#lapTimes li {
+    font-size: 1.2em;
+    margin: 5px 0;
+    color: #4084e4;
+}
