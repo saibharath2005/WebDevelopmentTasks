@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(112, 224, 84);
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  margin-top: 30px;
+  font-size: 2rem;
+  color: #333;
+}
+
+.form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.input,
+.datetime,
+.add-btn {
+  margin: 10px 0;
+  width: 300px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.add-btn {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-btn:hover {
+  background-color: #45a049;
+}
+
+.list {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 10px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.list li.checked {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.task-content {
+  flex-grow: 1;
+}
+
+.datetime-display {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.list li .actions {
+  display: flex;
+  gap: 10px;
+}
+
+.list li .actions i {
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.list li .fa-trash {
+  color: red;
+}
+
+.list li .fa-edit {
+  color: orange;
+}
+
+.list li .fa-check {
+  color: green;
+}
